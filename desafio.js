@@ -21,31 +21,38 @@
     let dato_tres = prompt("Ingrese cantidad que necesita del producto.");
     console.log("Cantidad ingresada:", dato_tres);
 
-    if( dato_uno == "Buzo"){
-
-        let suma = Buzo * parseInt(dato_tres);
-        console.log("Valor total:", suma);
-        alert("El valor total de la compra es:" + " " + "$" + suma);
-
-    }
-
-    else if( dato_uno == "Campera"){
-        let suma = Campera * parseInt(dato_tres);
-        console.log("Valor total:", suma);
-        alert("El valor total de la compra es:" + " " + "$" +suma);
     
+    function suma_producto(){
+        
+        if( dato_uno == "Buzo"){
 
+            let suma = Buzo * parseInt(dato_tres);
+            console.log("Valor total:", suma);
+            alert("El valor total de la compra es:" + " " + "$" + suma);
+    
+        }
+    
+        else if( dato_uno == "Campera"){
+            let suma = Campera * parseInt(dato_tres);
+            console.log("Valor total:", suma);
+            alert("El valor total de la compra es:" + " " + "$" +suma);
+        
+    
+        }
     }
+    
+    suma_producto();
     
     alert("¡Muchas gracias por su compra!");
 
     ingresar = prompt("Desea seguir comprando; Si o No.")
 
-  
+
 
     }
-    
-    
+
+
+
     
 
 
